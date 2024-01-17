@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/about_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>About</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="background-container">
+                <div class="bg-1"></div>
+            </div>
+            <div class="about-container">
+                <a href="index.html" class="back-button"></a>
+
+                <div class="text-container">
+
+                    <h1>About us</h1>
+                    <p>
+
+                        Welcome to Panen Kasher, your online portal to the enchanting wonders of Kashmir. Dive
+                        into the beauty of Pahalgam's meadows, have a snow-filled adventure in Gulmarg, and wander
+                        through the golden landscapes of Sonamarg. Our site is your virtual guide to the best of
+                        Kashmir's tourism.
+
+                        Discover the charm of Srinagar, with its stunning Mughal Gardens and the peaceful Dal Lake. At
+                        ExploreKashmirNow.com, we simplify your journey, providing travel tips and insights to make your
+                        Kashmir experience memorable. Join us in exploring the magic of Kashmir – your adventure starts
+                        here!
+                        <br>
+                        <br> Thank you for visiting Panun Kasher, and we hope that our website will inspire you to
+                        explore the Jewels of Kashmir.
+                    </p>
+                </div>
+                <a href="https://www.instagram.com/macroshah/" class="instagram"></a>
+            </div>
+        </div>
+
+    </header>
+    <footer class="mt-auto">
+        &copy; 2023 CopyRight. All rights reserved.
+    </footer>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)), url("Images/fort.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    @media (max-width: 991.98px) {
+        body:not(.show-navbar-collapse) {
+            overflow: hidden;
+        }
+    }
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .background-container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+    }
+
+    .bg-1 {
+        flex: 1;
+    }
+
+    .about-container {
+        width: 85%;
+        min-height: 80vh;
+        position: absolute;
+        background-color: white;
+        box-shadow: 24px 24px 30px #6d8dad;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 40px;
+        border-radius: 5px;
+    }
+
+    .image-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .back-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 40px;
+        height: 40px;
+        background-image: url("Images/backbutton.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+
+    .back-button:hover {
+        opacity: 0.8;
+    }
+
+    .back-button:active {
+        opacity: 0.6;
+    }
+
+    .back-button:focus {
+        outline: none;
+    }
+
+    .back-button::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        z-index: -1;
+    }
+
+    .back-button::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid white;
+    }
+
+    .back-button:focus::before,
+    .back-button:hover::before {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .back-button:active::before {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: transparent;
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .instagram {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        background-image: url("/Images/images.jpeg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin: 20px auto;
+    }
+</style>
+
+</html>
